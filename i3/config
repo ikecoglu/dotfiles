@@ -172,7 +172,7 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
-bindsym $mod+r mode "resize"
+bindsym $mod+Shift+s mode "resize"
 
 set $bg-color 	         #2f343f
 set $inactive-bg-color   #2f343f
@@ -209,6 +209,7 @@ bindsym $mod+b exec brave
 bindsym $mod+t exec thunderbird
 bindsym $mod+n exec nautilus
 bindsym $mod+Shift+x exec "~/Scripts/lock/lock.sh ~/Scripts/lock/lock.png"
+bindsym $mod+r exec ranger
 
 #Startup
 exec "xinput set-prop 14 360 1"
