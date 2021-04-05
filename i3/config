@@ -212,6 +212,7 @@ bindsym $mod+Shift+x exec "~/Scripts/lock/lock.sh ~/Scripts/lock/lock.png"
 
 #Startup
 exec "xinput set-prop 14 360 1"
+exec "xinput set-prop 14 342 1"
 exec compton
 exec "rclone --vfs-cache-mode writes mount onedrive: /media/hdd/personal/drive/onedrive"
 exec_always "feh --randomize --bg-scale /media/hdd/personal/photos_videos/wallpapers/*"
