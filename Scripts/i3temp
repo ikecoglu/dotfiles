@@ -1,0 +1,8 @@
+#!/bin/bash
+
+case $BLOCK_BUTTON in
+	1) notify-send -t 2000 "$(ps axch -o cmd:15,%cpu --sort=-%cpu | head)" ;;
+	#3) notify-send "Right click" ;;
+esac
+
+sensors | awk '/^temp1/ {print $2}' | awk 'NR==1' | sed 's/+//g'
